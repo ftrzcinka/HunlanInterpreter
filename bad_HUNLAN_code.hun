@@ -1,0 +1,49 @@
+# This file tests if your interpreter reacts on incorrect commends
+# Each group of commands below except the last print command should
+# stop program execution and generate error message like 
+# “ERROR: Bad instruction in Line 28”. Check the rules of error reporting
+# in the assignment.
+#
+# Uncomment the groups of lines below and after the test comment them again.
+# The first uncommented group of lines should cause a execution abortion
+# and error message.
+
+# string Message # "string" isn't "STRING". Line 11.
+
+
+# NUMBER 1st_val # variable name cannot start with a number. Line 14.
+
+
+# PRINT "No \"double quotes\" inside HUNLAN strings allowed!" # Line 17.
+
+
+# var = 5 # var was never defined. Line 20.
+
+
+# NUMBER num
+# num = "Hello" # You can't assign strings to numeric variables. Line 24.
+
+
+# NUMBER num
+# STRING line
+# line="something"
+# num = line # You can't assign strings to numeric variables. Line 30.
+
+
+# STRING line
+# NUMBER num
+# NUMBER = 5 * 2 + line # strings cannot be a part of arithmetic expression. Line 35.
+
+
+# 5 = 4+9 # left part of an assignment must be a variable. Line 38.
+
+
+# NUMBER num	
+# num = 5 * 2   4 + 10 # incorrect arithmetic expression. Line 42.
+
+
+ NUMBER num
+	num = 5++6 # incorrect arithmetic expression. HUNLAN doesn't have division. Line 46. 
+
+
+PRINT "If you see this message, please read the starting comment of the source code file"
